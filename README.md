@@ -17,9 +17,8 @@ Software downloaded:
     -xterm 
     
 Generalization: A nutcracker that looks like the grinch has a LED heart. The heart can be remotely controlled LAN on a webapp. 
-There are two options the user can select: OFF/ON, Heart Beat Pulse. I wanted to have the heart beat pulse as default, but I was having
-trouble with the on/off working with it. Basically, there were multiple php files running at the same time, while loop in heartbeat php file.
+There are two options the user can select: OFF/ON, Heart Beat Pulse. I wanted to have the heart beat pulse constantly active, but I was having trouble with the on/off working with it. I unfortunately could not find a way to break the while loop at the time.
 
 There is an exeternal option with the nutcracker. On the base of it there are two options, Reset/Pull from gitlab or shutdown the Raspberry Pi.
-Both use python, shutdown mode signals to the bash code for extra coolness. The python code runs on bootup and continuely checks to see if pressed, 
-could probably change this to interrupt instead of polling.
+Both use python, shutdown mode signals to the bash code for extra coolness. The python code runs on bootup and continuely checks to see if pressed, should be able to change this to interrupt instead of polling.
+
